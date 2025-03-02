@@ -1,0 +1,12 @@
+[Unit]
+Description=Method CRM API Server Service
+After=network.target
+
+[Service]
+ExecStart=$NODEPATH $PROJECT_PATH/method-crm/server.js
+Restart=always
+User=$USER
+WorkingDirectory=$PROJECT_PATH/method-crm
+
+[Install]
+WantedBy=multi-user.target

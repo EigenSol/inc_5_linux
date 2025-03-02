@@ -1,0 +1,4 @@
+find: ‘./api/__pycache__’: No such file or directory
+find: ‘./config/__pycache__’: No such file or directory
+find: ‘./core/util/functions/__pycache__’: No such file or directory
+rm: cannot remove '/home/stranger/Documents/repo/EigenSol/kas-python/scripts/deploy/..//../exports/deploy/deploy.bash': No such file or directory

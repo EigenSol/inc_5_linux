@@ -1,0 +1,12 @@
+[Unit]
+Description=KAS Polling Service
+After=network.target
+
+[Service]
+ExecStart=$PYTHON $KAS_ROOT/services/MethodCRMPollingService.py
+Restart=always
+User=$USER
+WorkingDirectory=$KAS_ROOT
+
+[Install]
+WantedBy=multi-user.target

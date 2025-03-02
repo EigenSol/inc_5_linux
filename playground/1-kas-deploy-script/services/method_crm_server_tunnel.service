@@ -1,0 +1,12 @@
+[Unit]
+Description=Method CRM API Server Tunnel Service
+After=network.target
+
+[Service]
+ExecStart=$CLOUDFLARED_PATH tunnel --url 127.0.0.1:8000
+Restart=always
+User=$USER
+WorkingDirectory=$PROJECT_PATH/method-crm
+
+[Install]
+WantedBy=multi-user.target

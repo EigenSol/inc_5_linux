@@ -1,0 +1,6 @@
+Python
+
+script ~> pkg (zip)
+pkg ~> upload ~> script ~> deploy
+
+scripts/

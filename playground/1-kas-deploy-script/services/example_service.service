@@ -1,0 +1,12 @@
+[Unit]
+Description=Example Service
+After=network.target
+
+[Service]
+ExecStart=whoami
+Restart=always
+User=abdullah
+WorkingDirectory=/home/stranger
+
+[Install]
+WantedBy=multi-user.target
